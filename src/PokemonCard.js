@@ -1,5 +1,5 @@
 import React from "react";
-import {useFlip} from "./hooks"
+import { useFlip } from "./hooks";
 import "./PokemonCard.css";
 
 /* Renders a single pokemon card. */
@@ -13,7 +13,7 @@ function PokemonCard({ front, back, name, stats }) {
           <div>
             <p className="PokemonCard-name">{name}</p>
             <ul className="PokemonCard-stats">
-              {stats.map(stat => (
+              {stats.map((stat) => (
                 <li key={stat.name}>
                   <em>{stat.name}</em>: {stat.value}
                 </li>
